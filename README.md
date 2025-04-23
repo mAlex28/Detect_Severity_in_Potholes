@@ -18,3 +18,53 @@ git clone https://github.com/ultralytics/yolov5.git
 cd yolov5
 pip install -r requirements.txt
 ```
+
+## Metrics
+
+- **Precision & Recall**: Computed per class to evaluate detection accuracy.
+- **mAP (mean Average Precision)**:
+  - **mAP@0.5**: IoU threshold of 0.5
+  - **mAP@0.5:0.95**: Averaged over multiple IoU thresholds (0.5 to 0.95)
+
+## Loss Curves
+
+Visualisation of:
+
+- **Training Loss**
+- **Validation Loss**
+
+Helps diagnose overfitting or underfitting during training.
+
+## Output Location
+
+You can find the metrics and plots under the `runs/train/` directory.
+
+## Recreate the Project
+
+Due to the large size of the dataset and the YOLOv5 repository, these have not been uploaded to GitHub. However, you can recreate the project by following the steps below:
+
+### 1. Download the Dataset
+
+You can download the dataset from the following link:
+
+- [Download the pothole dataset](https://data.mendeley.com/datasets/tp95cdvgm8/1)
+
+This dataset contains annotated pothole images that will be used for training and evaluation.
+
+### 2. Clone the YOLOv5 Repository
+
+Clone the official YOLOv5 repository from GitHub. This repository contains the necessary files to train the YOLO model for object detection.
+
+```python
+git clone https://github.com/ultralytics/yolov5.git
+cd yolov5
+pip install -r requirements.txt
+```
+
+### 3. Organise the Dataset
+
+📦dataset
+┣ 📂IMG
+┣ 📂XML
+┣ 📂Updated_XML
+┗ 📂YOLO

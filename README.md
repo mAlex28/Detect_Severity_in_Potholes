@@ -18,3 +18,23 @@ git clone https://github.com/ultralytics/yolov5.git
 cd yolov5
 pip install -r requirements.txt
 ```
+
+## Metrics
+
+- **Precision & Recall**: Computed per class to evaluate detection accuracy.
+- **mAP (mean Average Precision)**:
+  - **mAP@0.5**: IoU threshold of 0.5
+  - **mAP@0.5:0.95**: Averaged over multiple IoU thresholds (0.5 to 0.95)
+
+## Loss Curves
+
+Visualisation of:
+
+- **Training Loss**
+- **Validation Loss**
+
+Helps diagnose overfitting or underfitting during training.
+
+## Output Location
+
+You can find the metrics and plots under the `runs/train/` directory.

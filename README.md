@@ -63,12 +63,6 @@ pip install -r requirements.txt
 
 ### 3. Organise the Dataset
 
-├── dataset/
-│ ├── IMG/ # Raw pothole images
-│ ├── XML/ # Original XML annotations
-│ ├── Updated_XML/ # Cleaned/modified XML files
-│ └── YOLO/ # YOLO-formatted annotations
-
 📦dataset
 ┣ 📂IMG
 ┣ 📂XML
